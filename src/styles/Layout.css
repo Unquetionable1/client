@@ -1,0 +1,58 @@
+/* Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between; /* Space between groups */
+    align-items: center;
+  }
+  
+  .nav-left {
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1; /* Allows this to take up available space */
+    justify-content: center; /* Center the items */
+  }
+  
+  .nav-center {
+    display: flex;
+    gap: 1rem;
+    flex-grow: 2; /* More space to the center links */
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: #ddd;
+    text-decoration: underline;
+  }
+  
+  .main {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
